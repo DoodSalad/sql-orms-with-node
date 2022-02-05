@@ -25,7 +25,7 @@ module.exports = (sequelize) => {
     runtime: {
       type: Sequelize.INTEGER,
       allowNull: false,
-      validate {
+      validate: {
         min: {
           args: 1,
           msg: 'Please provide a value greater than "0" for "runtime"',
@@ -38,7 +38,7 @@ module.exports = (sequelize) => {
     releaseDate: {
       type: Sequelize.DATEONLY,
       allowNull: false,
-      validate {
+      validate: {
         notNull: 'Please provide a value for "releaseDate"',
        },
        isAfter: {
