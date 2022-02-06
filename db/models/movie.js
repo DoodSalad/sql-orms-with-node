@@ -53,7 +53,8 @@ module.exports = (sequelize) => {
      },
   }, {
     timestamps: false, // disable timestamps
-    sequelize });
+    sequelize
+   });
 
   return Movie;
 };
