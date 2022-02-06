@@ -6,7 +6,7 @@ const { Movie } = db.models;
 
   try {
     const movie = await Movie.create({
-      title: '',
+      title: 'Toy Story',
       runtime: 81,
       releaseDate: '1995-11-22',
       isAvailableOnVHS: true,
