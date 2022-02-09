@@ -40,6 +40,12 @@ const { Op } = db.Sequelize;
     });
     await movie3.save();
 
+    const toyStory3 = await Movie.findByPk(3);
+    await toyStory3.update({
+      isAvailableOnVHS: true,
+    });
+    console.log(toyStory3.toJSON());
+
     const movieById = await Movie.findByPk(1);
     console.log(movieById.toJSON());
 
