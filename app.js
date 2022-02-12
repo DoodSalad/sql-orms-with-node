@@ -44,6 +44,8 @@ const { Op } = db.Sequelize;
     await toyStory3.update({
       isAvailableOnVHS: true,
     });
+    //Delete a record
+    await toyStory3.destroy();
     console.log(toyStory3.toJSON());
 
     const movieById = await Movie.findByPk(1);
